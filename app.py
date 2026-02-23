@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-from PyPDF2 import PdfReader
+from PyPDF2 import PdfReader 
 import docx
 import os
 from langchain_community.vectorstores import FAISS
@@ -173,4 +173,5 @@ def main():
             st.session_state.messages.append({"role": "assistant", "content": response})
 
 if __name__ == "__main__":
+
     main()
